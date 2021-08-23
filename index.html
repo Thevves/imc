@@ -3,17 +3,15 @@
         <head> 
             <link rel="stylesheet" type="text/css" href="style.css">
             <meta charset="UTF-8"> 
-
-            <script src="conta.js" defer></script>
-
+            <script src="professor.js" defer></script>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,900&display=swap" rel="stylesheet">
             <title> IMC </title>
         </head>
+
 
         <body>
             <header> 
@@ -74,22 +72,22 @@
                     <form>
                         <div class="campos">
                             <label form="">NOME:</label>
-                            <input type="text">
+                            <input id="nome" type="text" required>
                         </div>
 
                         <div class="campos unidade" data-unidade="metros">
                             <label form="">ALTURA:</label>
-                            <input type="text" id="altura">
+                            <input type="number" id="altura" required step="any">
                         </div>
 
                         <div class="campos unidade" data-unidade="quilos">
                             <label form="">PESO:</label>
-                            <input type="text" id="peso">
+                            <input type="number" id="peso" required step="any">
                         </div>
                         <button type="button" value="calcular" id="calcular"> Calcular </button>
 
-                        <div>
-                            <input type="text" id="resultado">
+                        <div  id="resultado">
+                            
                         </div>
                     </form>
                 </section>

@@ -6,7 +6,7 @@ const calcular = document.getElementById("calcular");
 
 
 function calculo() {
-    const total = parseFloat(altura.value) * 2 / parseFloat(peso.value)
+    const total = parseFloat(peso.value) / (parseFloat(altura.value) * 2)
     resultado.value = total
 }
 
